@@ -48,8 +48,8 @@ public class TestBase extends TestListener {
 	@Parameters("browser") // this parameter is used in testNG.xml
 	public void beforeEachTestCase(String browser) {
 
-		// driver = DriverUtil.startBrowser(browser);
-		 driver = DriverUtil.startBrowserInPrivateMode(browser);
+		driver = DriverUtil.startBrowser(browser);
+		 //driver = DriverUtil.startBrowserInPrivateMode(browser);
 		// driver = DriverUtil.startDockerContainerBrowser(browser);
 
 	}
